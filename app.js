@@ -111,7 +111,7 @@ const game = () => {
         screen.appendChild(resetButton)
         let gameOverMessage = document.createElement('p')
         gameOverMessage = "Maximum points reached. Game over!"
-        history.appendChild(gameOverMessage)
+        screen.appendChild(gameOverMessage)
         return
       }
     })
