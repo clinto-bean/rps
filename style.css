@@ -80,8 +80,34 @@ main {
   border-radius: 1rem;
 }
 
+#game-console {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#game-console button {
+  background-color: var(--clr-primary-100);
+  padding: 0.5rem;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  max-width: fit-content;
+  align-self: center;
+}
+
+#game-console button:hover {
+  cursor: pointer;
+  background-color: var(--clr-primary-300);
+  color: white;
+}
+
+#game-console button:active {
+  scale: 1.1;
+}
+
 #history {
   min-height: 10vh;
+  font-size: 12px;
   width: 100%;
   border-radius: inherit;
   background-color: var(--clr-neutral-100);
