@@ -109,6 +109,9 @@ const game = () => {
       makeMove(option)
       if (playerScore == 3 || cpuScore == 3) {
         screen.appendChild(resetButton)
+        let gameOverMessage = document.createElement('p')
+        gameOverMessage = "Maximum points reached. Game over!"
+        history.appendChild(gameOverMessage)
         return
       }
     })
